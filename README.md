@@ -111,3 +111,9 @@ docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -e TZ=As
 ## Public Key retrieval is not allowed( since 8.0)
 Add these options to the connection string
 useSSL=false&allowPublicKeyRetrieval=true
+
+# Mac Network
+## Disable network interface
+sudo ifconfig en7 down
+sudo ifconfig en7 up
+(*) No command - ip
