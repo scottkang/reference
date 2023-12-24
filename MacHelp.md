@@ -99,3 +99,9 @@ $>java -version
 java version "17.0.9" 2023-10-17 LTS
 Java(TM) SE Runtime Environment (build 17.0.9+11-LTS-201)
 Java HotSpot(TM) 64-Bit Server VM (build 17.0.9+11-LTS-201, mixed mode, sharing)
+
+# Mac Network
+## Disable network interface
+sudo ifconfig en7 down
+sudo ifconfig en7 up
+(*) No command - ip
