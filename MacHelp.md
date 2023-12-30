@@ -100,8 +100,40 @@ java version "17.0.9" 2023-10-17 LTS
 Java(TM) SE Runtime Environment (build 17.0.9+11-LTS-201)
 Java HotSpot(TM) 64-Bit Server VM (build 17.0.9+11-LTS-201, mixed mode, sharing)
 
+## Find available JDKS
+$>brew search jdk
+==> Formulae
+openjdk                          openjdk@11                       openjdk@17                       openjdk@8                        jd                               mdk                              cdk
+
+==> Casks
+adoptopenjdk                                   homebrew/cask-versions/graalvm-jdk17           homebrew/cask-versions/microsoft-openjdk17     sapmachine-jdk                                 homebrew/cask-versions/semeru-jdk8-open
+homebrew/cask-versions/adoptopenjdk8 ✔         jdk-mission-control                            oracle-jdk                                     semeru-jdk-open
+gama-jdk                                       microsoft-openjdk                              oracle-jdk-javadoc                             homebrew/cask-versions/semeru-jdk11-open
+graalvm-jdk                                    homebrew/cask-versions/microsoft-openjdk11     homebrew/cask-versions/oracle-jdk17 ✔          homebrew/cask-versions/semeru-jdk17-open
+
+$>brew install --cask semeru-jdk11-open
+Running `brew update --auto-update`...
+==> Auto-updated Homebrew!
+Updated 3 taps (homebrew/cask-versions, homebrew/core and homebrew/cask).
+==> New Formulae
+cargo-llvm-cov                                             pivit                                                      texi2mdoc                                                  wasmedge
+==> New Casks
+geekbench-ml                                   lightburn                                      ollama                                         opencat                                        streammusic
+
+==> Downloading https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.21+9_openj9-0.41.0/ibm-semeru-open-jdk_aarch64_mac_11.0.21_9_openj9-0.41.0.pkg
+==> Downloading from https://objects.githubusercontent.com/github-production-release-asset-2e65be/377358269/f4243735-a140-497b-8244-9277b5afed52?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20231230%2Fus-ea
+################################################################################################################################################################################################################################### 100.0%
+==> Installing Cask semeru-jdk11-open
+==> Running installer for semeru-jdk11-open with sudo; the password may be necessary.
+Password:
+installer: Package name is IBM Semeru Runtime Open Edition
+installer: Installing at base path /
+installer: The install was successful.
+🍺  semeru-jdk11-open was successfully installed!
+
 # Mac Network
 ## Disable network interface
 sudo ifconfig en7 down
 sudo ifconfig en7 up
 (*) No command - ip
+
