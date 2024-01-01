@@ -15,5 +15,5 @@ It seems STS tries to connect to github with id_rsa(256) file but github respond
 
 I generated a new private/public key with this command, and registered the key to github. And STS could connect to github.
 ```bash
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
