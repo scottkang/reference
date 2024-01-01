@@ -1,15 +1,18 @@
 # Mac JDK installation
 ## Mac Homebrew installation
+```bash
 $>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 - Run these two commands in your terminal to add Homebrew to your PATH:
     (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/scott/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
-
+```
 ## Mac Open JDK 8 installation
+```bash
 $>brew tap AdoptOpenJDk/openjdk
 Failed 
-
+```
+```bash
 $>brew tap homebrew/cask-versions
 ==> Tapping homebrew/cask-versions
 Cloning into '/opt/homebrew/Library/Taps/homebrew/homebrew-cask-versions'...
@@ -55,12 +58,15 @@ installer: This package requires Rosetta 2 to be installed.
 
 installer: Error - AdoptOpenJDK을(를) 이 컴퓨터에 설치할 수 없습니다.
 
+```bash
 $>sudo softwareupdate --install-rosetta
 I have read and agree to the terms of the software license agreement. A list of Apple SLAs may be found here: https://www.apple.com/legal/sla/
 Type A and press return to agree: A
 2023-12-21 14:06:12.882 softwareupdate[4739:48405] Package Authoring Error: 032-84877: Package reference com.apple.pkg.RosettaUpdateAuto is missing installKBytes attribute
 Install of Rosetta 2 finished successfully
+```
 
+```bash
 $>brew install --cask adoptopenjdk8    
 Warning: adoptopenjdk8 has been deprecated because it is discontinued upstream!
 ==> Caveats
@@ -76,9 +82,11 @@ installer: Package name is AdoptOpenJDK
 installer: Installing at base path /
 installer: The install was successful.
 🍺  adoptopenjdk8 was successfully installed!
+```
 
 ## Mac JDK 17 installation
 
+```bash
 $>brew install --cask oracle-jdk17
 ==> Downloading https://formulae.brew.sh/api/cask.jws.json
 
@@ -101,6 +109,8 @@ Java(TM) SE Runtime Environment (build 17.0.9+11-LTS-201)
 Java HotSpot(TM) 64-Bit Server VM (build 17.0.9+11-LTS-201, mixed mode, sharing)
 
 ## Find available JDKS
+```
+```bash
 $>brew search jdk
 ==> Formulae
 openjdk                          openjdk@11                       openjdk@17                       openjdk@8                        jd                               mdk                              cdk
@@ -130,10 +140,14 @@ installer: Package name is IBM Semeru Runtime Open Edition
 installer: Installing at base path /
 installer: The install was successful.
 🍺  semeru-jdk11-open was successfully installed!
+```
 
 # Mac Network
 ## Disable network interface
-sudo ifconfig en7 down
-sudo ifconfig en7 up
+
+```bash
+$>sudo ifconfig en7 down
+$>sudo ifconfig en7 up
+```
 (*) No command - ip
 
