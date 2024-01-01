@@ -57,6 +57,7 @@ installer: This package requires Rosetta 2 to be installed.
                     `sudo softwareupdate --install-rosetta`
 
 installer: Error - AdoptOpenJDK을(를) 이 컴퓨터에 설치할 수 없습니다.
+```
 
 ```bash
 $>sudo softwareupdate --install-rosetta
