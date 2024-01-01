@@ -362,3 +362,23 @@ zsh completions have been installed to:
   /opt/homebrew/share/zsh/site-functions
 ```
 
+# Start podman at Mac OS M2 architecture
+
+```bash
+$>podman machine init
+Downloading VM image: fedora-coreos-39.20231204.2.1-qemu.aarch64.qcow2.xz: done  
+Extracting compressed file: podman-machine-default_fedora-coreos-39.20231204.2.1-qemu.aarch64.qcow2: done  
+Image resized.
+Machine init complete
+To start your machine run:
+
+	podman machine start
+
+$>podman machine start
+Starting machine "podman-machine-default"
+Waiting for VM ...
+
+```
+No prompt returned -- hang
+
+
