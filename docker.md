@@ -33,5 +33,6 @@ docker cp 9a:/var/lib/mysql /tmp
 ```
 9a : container id or name
 /var/lib/mysql : source directory (container)
-/tmp : target directory (host)
+/tmp : target directory (host)   
 
+If the source data may be updated while copying, stop the container and execute this command.
