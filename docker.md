@@ -6,7 +6,8 @@ $>docker commit -a "mint-mysql" mysql mint-repo:latest
 * -a : author ex) scott.kang@gmail.com
 * mysql : container name or id
 * mint-repo : repository, image name
-* latest : tag
+* latest : tag   
+This command <i style="color:red">does not maintain the data generated after the container is started</i>.
 
 # Image export
 Use docker save option to make an image to .tar file.
@@ -23,3 +24,14 @@ $>docker load -i mint-mysql.tar
 ```
 
 * -i : input tar file
+
+# Container to image with data 
+
+Use docker cp command
+```bash
+docker cp 9a:/var/lib/mysql /tmp
+```
+9a : container id or name
+/var/lib/mysql : source directory (container)
+/tmp : target directory (host)
+
