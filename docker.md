@@ -36,3 +36,10 @@ docker cp 9a:/var/lib/mysql /tmp
 /tmp : target directory (host)   
 
 If the source data may be updated while copying, stop the container and execute this command.
+
+# Login to the container
+```bash
+$>docker exec -it d4 /bin/bash
+```
+* d4 : container id
+* /bin/bash : command to execute
