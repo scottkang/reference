@@ -8,3 +8,8 @@ docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -e TZ=As
 ## Public Key retrieval is not allowed( since 8.0)
 Add these options to the connection string
 * useSSL=false&allowPublicKeyRetrieval=true
+
+# Add data to docker mysql
+```bash
+docker exec -i some-mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
+```
