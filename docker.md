@@ -43,3 +43,9 @@ $>docker exec -it d4 /bin/bash
 ```
 * d4 : container id
 * /bin/bash : command to execute
+
+
+# Image build with target platforms
+```bash
+docker build --platform linux/amd64,linux/arm64 -t image_name .
+```
