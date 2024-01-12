@@ -1,4 +1,10 @@
 # DB2DB Template
+
+* http://localhost:8080/rest/flow/save-template
+* POST
+* Cookies : role, user, mi-session-id
+
+  
 ```json
 {
   "type": "0",
