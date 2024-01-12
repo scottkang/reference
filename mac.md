@@ -142,6 +142,12 @@ installer: Installing at base path /
 installer: The install was successful.
 🍺  semeru-jdk11-open was successfully installed!
 ```
+## JDK Environment
+JAVA_15=/Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+JAVA_8=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+JAVA_11=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
+JAVA_ZULU=/Library/Java/JavaVirtualMachines/zulu-15.jdk/Contents/Home
+JAVA_17=/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
 
 # Mac Network
 ## Disable network interface
