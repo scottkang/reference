@@ -46,6 +46,17 @@ $>docker exec -it d4 /bin/bash
 
 
 # Image build with target platforms
+
 ```bash
-docker build --platform linux/amd64,linux/arm64 -t image_name .
+docker buildx build --platform linux/amd64,linux/arm64 --output type=tar,dest=./output.tar -t image_name .
+```
+
+```bash
+#docker buildx build --platform linux/amd64,linux/arm64 --load -t mysql-source .
+# ERROR: docker exporter does not currently support exporting manifest lists
+
+# docker buildx build --platform linux/amd64,linux/arm64 --output local -t mysql-source .
+# ERROR: failed to solve: error from receiver: failed to create device local/linux_arm64/dev/console: operation not permitted
+#docker buildx build --platform linux/amd64,linux/arm64 -t mysql-source .
+docker buildx build --platform linux/amd64,linux/arm64 --output type=tar,dest=./output -t mysql-source .
 ```
