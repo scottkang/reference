@@ -48,6 +48,7 @@ $>docker exec -it d4 /bin/bash
 # Image build with target platforms
 
 ```bash
+docker buildx create --use
 docker buildx build --platform linux/amd64,linux/arm64 --output type=tar,dest=./output.tar -t image_name .
 ```
 
