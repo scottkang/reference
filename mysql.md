@@ -30,5 +30,6 @@ mysql -uroot -p"$MYSQL_ROOT_PASSWORD" < employees.sql
 
 ## docker exec
 ```bash
+docker run -d -e MYSQL_ROOT_PASSWORD=password -p 13316:3306 mysql-source
 docker exec d8a sh -c '/usr/app/load-employees.sh'
 ```
