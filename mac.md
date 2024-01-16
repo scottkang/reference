@@ -158,3 +158,8 @@ $>sudo ifconfig en7 up
 ```
 (*) No command - ip
 
+## List up the network interfaces
+```bash
+$>networksetup -listallhardwareports
+
+```
