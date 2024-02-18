@@ -86,3 +86,16 @@ Here is that TZ value again, this time on standard output so that you
 can use the /bin/tzselect command in shell scripts:
 Asia/Seoul
 ```
+
+# firewall-cmd
+```bash
+firewall-cmd --zone=public --add-port 18080/tcp
+```
+
+# selinux
+```bash
+$>sestatus
+$>setenforce 0
+$>semanage port -l
+$>semanage port -a -t http_port_t -p tcp 18080
+```
