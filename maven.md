@@ -16,3 +16,9 @@ Solution
     </mirror>
 <mirror>
 ```
+
+
+# install .jar file into local repository
+```sh
+mvn install:install-file -Dpackaging=jar -Dfile=custom.jar -DgroupId=group-id -DartifactId=artifact-id -Dversion=1.0 -DgeneratePom=true
+```
