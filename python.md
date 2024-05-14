@@ -33,3 +33,7 @@ tup = (atime, mtime)
 os.utime(path, tup)
 print( os.stat(path) );
 ```
+
+$>pip3 install pyinstaller
+
+$>pyinstaller --onefile change_file_mtime.py
