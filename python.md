@@ -11,3 +11,25 @@ os.stat_result(st_mode=33188, st_ino=124824341, st_dev=16777233, st_nlink=1, st_
 >>> print( os.stat("./install.log") );
 Ctrl-D
 ```
+Example
+$>python3 change_file_mtime.py install.log '2024-01-01 01:23:45'
+```python
+import os
+import sys
+import datetime
+import sys
+
+path = sys.argv[1]
+target = sys.argv[2]
+
+# date_str = '2023-02-28 14:30:00'
+date_format = '%Y-%m-%d %H:%M:%S'
+date_obj = datetime.datetime.strptime(target, date_format)
+print( os.stat(path) );
+timestamp = int(date_obj.timestamp())
+atime = timestamp
+mtime = timestamp
+tup = (atime, mtime)
+os.utime(path, tup)
+print( os.stat(path) );
+```
