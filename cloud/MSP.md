@@ -68,7 +68,5 @@ MSP는 "Managed Service Provider"의 약자로, 관리형 서비스 제공자를
 
 아울러 2027년 국내 매니지드 클라우드 서비스 시장은 향후 5년간 연평균 14.4% 성장하며 1조 6,407억 원의 규모를 기록할 것으로 전망된다. 한국IDC는 국내 매니지드 서비스 시장 성숙도가 높아지면서 MSP 사업자들의 역할도 더욱 확대될 것으로 전망하고 있다.
 
-출처 : 아이티데일리(http://www.itdaily.kr)
-
 출처 : 아이티데일리(http://www.itdaily.kr) http://www.itdaily.kr/news/articleView.html?idxno=219911
 ```
