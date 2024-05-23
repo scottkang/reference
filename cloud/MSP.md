@@ -1,8 +1,8 @@
 # News and articles
-https://www.bespinglobal.com/cloud-market-forecast_2023/
-https://www.samsungsds.com/kr/techreport/msp.html
-https://www.digitaltoday.co.kr/news/articleView.html?idxno=473942
-https://industrymarket.co.kr/gugnae-msp-sijang-2026nyeonggaji-pyeonggyun-15-3-seongjanghae-12joweon-jeonmang/
+- https://www.bespinglobal.com/cloud-market-forecast_2023/
+- https://www.samsungsds.com/kr/techreport/msp.html
+- https://www.digitaltoday.co.kr/news/articleView.html?idxno=473942
+- https://industrymarket.co.kr/gugnae-msp-sijang-2026nyeonggaji-pyeonggyun-15-3-seongjanghae-12joweon-jeonmang/
 
 # MSP
 MSP는 "Managed Service Provider"의 약자로, 관리형 서비스 제공자를 의미합니다. MSP는 기업이나 조직의 IT 인프라 및 사용자 시스템을 원격으로 관리하고 유지보수하는 외부 서비스 제공업체입니다. MSP는 다양한 IT 서비스와 지원을 제공하여, 내부 IT 팀의 부담을 줄이고 운영 효율성을 높이는 데 도움을 줍니다.
