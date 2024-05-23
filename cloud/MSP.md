@@ -85,7 +85,7 @@ https://m.ddaily.co.kr/page/view/2024022010124504763
 
 https://m.ddaily.co.kr/page/view/2024022010124504763
 ```
-# Becoming an MSP
+# Becoming an MSP Part 1
 Becoming a Managed Service Provider (MSP) requires a combination of technical expertise, business acumen, and customer service skills. Here are some key resources and areas of focus you'll need to consider:
 
 ## Technical Expertise:
@@ -121,3 +121,74 @@ Monitoring and management tools: Knowledge of tools for monitoring system perfor
 - Vendor partnerships: Establish partnerships with technology vendors and distributors to access training, support, and resources.
 - Strategic alliances: Collaborate with other service providers, consultants, or technology firms to expand your service offerings and reach new markets.
 - Building a successful MSP business requires a combination of technical skills, business knowledge, and a focus on delivering value to your clients. Continuously investing in your skills, staying updated with industry trends, and providing exceptional service will help you succeed in this competitive field.
+
+# Becoming an MSP Part 2
+Establishing a Managed Service Provider (MSP) team requires a robust and diverse technical stack to effectively manage and support the IT infrastructure of clients. Here are the key components of the technical stack you will need:
+
+## Remote Monitoring and Management (RMM) Tools:
+
+- Examples: SolarWinds RMM, Datto RMM, NinjaRMM
+- Purpose: To remotely monitor client networks, devices, and systems for performance and security issues, automate maintenance tasks, and deploy updates.
+
+## Professional Services Automation (PSA) Software:
+
+- Examples: ConnectWise, Autotask, Kaseya BMS
+- Purpose: To manage client relationships, service tickets, billing, and project management, integrating seamlessly with RMM tools.
+
+## Network and Security Management Tools:
+
+* Firewall: pfSense, Cisco ASA
+* Intrusion Detection/Prevention: Snort, Suricata
+* Security Information and Event Management (SIEM): Splunk, AlienVault
+
+- Purpose: To protect client networks from threats, manage firewalls, detect and respond to security incidents, and ensure compliance with security policies.
+- Backup and Disaster Recovery Solutions:
+
+- Examples: Veeam, Acronis, Datto
+- Purpose: To ensure data integrity and availability, offering solutions for regular backups, disaster recovery, and business continuity planning.
+
+## Cloud Services and Management:
+
+- Cloud Providers: AWS, Microsoft Azure, Google Cloud Platform
+- Management Tools: CloudHealth, CloudCheckr
+
+- Purpose: To manage cloud resources, optimize costs, ensure security and compliance, and deploy cloud-based solutions for clients.
+
+## Endpoint Management and Security:
+
+- Examples: Microsoft Intune, Symantec Endpoint Protection, CrowdStrike
+- Purpose: To manage and secure client endpoints, including desktops, laptops, and mobile devices, ensuring they are protected from malware and other threats.
+
+## Virtualization and Infrastructure Management:
+
+- Examples: VMware vSphere, Microsoft Hyper-V, Citrix
+- Purpose: To manage virtualized environments, optimizing server resources, and supporting virtual desktop infrastructure (VDI) for remote work scenarios.
+
+## Help Desk and Ticketing Systems:
+
+- Examples: Zendesk, Freshdesk, Jira Service Management
+- Purpose: To manage and resolve client issues efficiently, providing a streamlined way to handle service requests and track resolution times.
+
+## Collaboration and Communication Tools:
+
+- Examples: Microsoft Teams, Slack, Zoom
+ Purpose: To facilitate internal team communication and collaboration, as well as client communication for support and project updates.
+
+## IT Documentation and Knowledge Management:
+
+- Examples: IT Glue, Confluence
+- Purpose: To maintain comprehensive documentation of client environments, standard operating procedures, and troubleshooting guides.
+
+## Automation and Scripting:
+
+- Languages: PowerShell, Python, Bash
+- Tools: Ansible, Puppet, Chef
+
+- Purpose: To automate repetitive tasks, configuration management, and deployment processes, improving efficiency and consistency.
+
+## Analytics and Reporting Tools:
+
+- Examples: Power BI, Tableau, Elastic Stack
+- Purpose: To generate insights from monitoring data, performance metrics, and service reports, aiding in decision-making and client communication.
+
+These tools and technologies form the backbone of a successful MSP operation, enabling efficient management, monitoring, and support of client IT environments. Investing in the right technical stack and ensuring your team is proficient in using these tools will help deliver high-quality managed services.
