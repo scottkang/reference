@@ -1,3 +1,14 @@
+# RSA Private/Public key
+```sh
+$>openssl genrsa -out private.key 2048       
+Generating RSA private key, 2048 bit long modulus
+.......................................................................................................+++++
+......+++++
+e is 65537 (0x10001)
+$>openssl rsa -in private.key -pubout -out public.key
+writing RSA key
+```
+
 # Self signed certificate
 ## db.cfg
 ```
