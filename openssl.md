@@ -1,3 +1,59 @@
+# Self signed certificate
+## db.cfg
+```
+[ req ]
+default_bits = 4096
+default_keyfile = db.key
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+[ req_distinguished_name ]
+C = SE
+ST = Stockholm
+L = Stockholm
+O = foo.bar
+OU = foo.bar
+CN= db.foo.bar
+emailAddress = postmaster@foo.bar
+[v3_ca]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer:always
+basicConstraints = CA:true
+[v3_req]
+# Extensions to add to a certificate request
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+```
+
+Then, begin by generating a self-signing certificate authority key:
+```sh
+openssl genrsa -out cadb.key 4096
+```
+
+And using this, a certificate signing authority:
+
+```sh
+openssl req -x509 -new -nodes -key cadb.key -days 3650 -config db.cfg -out cadb.pem
+```
+
+Now, generate a private key for our certificate:
+
+```sh
+openssl genrsa -out db.key 4096
+```
+
+And from this, a signing request:
+
+```sh
+openssl req -new -key db.key -out db.csr -config db.cfg
+```
+
+Then we can finally create and sign our certificate:
+
+```sh
+openssl x509 -req -in db.csr -CA cadb.pem -CAkey cadb.key -CAcreateserial  -out db.crt -days 365 -sha256
+```
+
 # .pfx
 A .pfx file (Personal Information Exchange) is a binary format for storing a server certificate, intermediate certificates, and private key into a single encryptable file. This format is commonly used to export and import certificates and private keys on Windows systems.
 
