@@ -8,7 +8,7 @@ e is 65537 (0x10001)
 $>openssl rsa -in private.key -pubout -out public.key
 writing RSA key
 
-$>openssl pkcs8 -in private.key -inform pem -out private.pem -outform PEM -topk8
+$>openssl pkcs8 -in private.key -inform pem -out private.pem -topk8 -nocrypt
 ```
 
 # Self signed certificate
